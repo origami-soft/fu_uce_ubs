@@ -1,3 +1,6 @@
 [submodule "odoo_l10n_ar"]
 	path = odoo_l10n_ar
 	url = git@bitbucket.org:blueorangegroup/odoo_l10n_ar.git
+[submodule "odoo_l10n"]
+	path = odoo_l10n
+	url = git@bitbucket.org:blueorangegroup/odoo_l10n.git
