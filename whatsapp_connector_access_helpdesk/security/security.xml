@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="chat_access_helpdesk_team" model="res.groups">
+            <field name="name">Only my Team (HelpDesk)</field>
+            <field name="category_id" ref="whatsapp_connector.category_chat_access"/>
+        </record>
+
+    </data>
+</odoo>
