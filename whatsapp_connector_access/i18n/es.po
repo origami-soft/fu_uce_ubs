@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* whatsapp_connector_access
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-15 23:45+0000\n"
+"PO-Revision-Date: 2022-06-15 23:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: whatsapp_connector_access
+#: model_terms:ir.ui.view,arch_db:whatsapp_connector_access.view_whatsapp_connector_connector_form
+msgid "Access"
+msgstr "Acceso"
+
+#. module: whatsapp_connector_access
+#: model:ir.model.fields,field_description:whatsapp_connector_access.field_acrux_chat_conversation__access_team_id
+msgid "CRM Team Access"
+msgstr "Acceso Equipo CRM"
+
+#. module: whatsapp_connector_access
+#: model:ir.model,name:whatsapp_connector_access.model_acrux_chat_conversation
+msgid "Chat Conversation"
+msgstr "Conversación Chat"
+
+#. module: whatsapp_connector_access
+#: model:ir.model.fields,field_description:whatsapp_connector_access.field_crm_team__chatroom_user_ids
+msgid "ChatRoom User Access"
+msgstr "Acceso Usuarios ChatRoom"
+
+#. module: whatsapp_connector_access
+#: model:ir.model,name:whatsapp_connector_access.model_acrux_chat_connector
+msgid "Connector Definition"
+msgstr "Definición de Conector"
+
+#. module: whatsapp_connector_access
+#: model:res.groups,name:whatsapp_connector_access.chat_access_crm_team
+msgid "Only my Team (CRM)"
+msgstr "Solo mi Equipo (CRM)"
+
+#. module: whatsapp_connector_access
+#: model:ir.model,name:whatsapp_connector_access.model_crm_team
+msgid "Sales Team"
+msgstr "Equipo de ventas"
+
+#. module: whatsapp_connector_access
+#: model:ir.model.fields,field_description:whatsapp_connector_access.field_acrux_chat_connector__allowed_user_ids
+msgid "User Access"
+msgstr "Acceso Usuarios"
