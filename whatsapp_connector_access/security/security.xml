@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="chat_access_crm_team" model="res.groups">
+            <field name="name">Only my Team (CRM)</field>
+            <field name="category_id" ref="whatsapp_connector.category_chat_access"/>
+        </record>
+
+        <!-- Access rules -->
+        <record id="chat_connector_company_rule" model="ir.rule">
+            <field name="name">Chat Connector Access Rule</field>
+            <field name="model_id" ref="whatsapp_connector.model_acrux_chat_connector"/>
+            <field eval="True" name="global"/>
+            <field name="domain_force">['|',('allowed_user_ids','=',False),('allowed_user_ids', 'in', [user.id])]</field>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+
+        <record id="chat_conversation_company_rule" model="ir.rule">
+            <field name="name">Chat Conversation Access Rule</field>
+            <field name="model_id" ref="whatsapp_connector.model_acrux_chat_conversation"/>
+            <field eval="True" name="global"/>
+            <field name="domain_force">['|',('connector_id.allowed_user_ids','=',False),('connector_id.allowed_user_ids', 'in', [user.id])]</field>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+
+    </data>
+</odoo>
